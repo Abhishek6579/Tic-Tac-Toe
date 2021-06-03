@@ -63,7 +63,7 @@ pygame.display.set_caption( 'TIC TAC TOE' )
 screen.fill( BG_COLOR )
 
 # Game Over
-over_font = pygame.font.Font('freesansbold.ttf', 64)
+# over_font = pygame.font.Font('freesansbold.ttf', 64)
 
 # ---------
 # FUNCTIONS
@@ -79,13 +79,13 @@ def draw_lines():
 	# 2 vertical
 	pygame.draw.line( screen, LINE_COLOR, (2 * SQUARE_SIZE, 0), (2 * SQUARE_SIZE, HEIGHT), LINE_WIDTH )
 
-def game_over_text(int):
-	if int == 1:
-		over_text = over_font.render("Over !!", True, (255, 0, 0))
-		screen.blit(over_text, (200, 250))
-	else:
-		over_text = over_font.render("Draw !!", True, (255, 0, 0))
-		screen.blit(over_text, (200, 250))
+# def game_over_text(int):
+# 	if int == 1:
+# 		over_text = over_font.render("Over !!", True, (255, 0, 0))
+# 		screen.blit(over_text, (200, 250))
+# 	else:
+# 		over_text = over_font.render("Draw !!", True, (255, 0, 0))
+# 		screen.blit(over_text, (200, 250))
 
 def draw_figures():
 	for i in range(0,9):
